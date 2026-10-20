@@ -1,0 +1,17 @@
+{
+  "name": "defiorbit",
+  "version": "0.1.0",
+  "description": "Command-line client for the DeFi Orbit API — position-level DeFi data: LP and lending positions, P&L, fees, impermanent loss and liquidation risk across 10 chains.",
+  "keywords": ["defi", "uniswap", "aave", "morpho", "kamino", "orca", "aerodrome", "pnl", "impermanent-loss", "cli", "api"],
+  "homepage": "https://docs.defiorbit.xyz",
+  "bugs": { "email": "support@defiorbit.xyz" },
+  "license": "MIT",
+  "author": "DeFi Orbit Inc. (https://defiorbit.xyz)",
+  "type": "module",
+  "bin": { "defiorbit": "bin/defiorbit.js" },
+  "files": ["bin/", "lib/", "README.md"],
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "commander": "^12.1.0"
+  }
+}

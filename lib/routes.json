@@ -1,0 +1,1324 @@
+[
+  {
+    "method": "GET",
+    "path": "/v1/lending/aavev3",
+    "summary": "List Aave V3 Positions",
+    "params": [
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "market_id",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "target_health_factor",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v1/lending/aavev3/batch",
+    "summary": "Batch Get Aave V3 Positions",
+    "params": [
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/lending/aavev3/position",
+    "summary": "Get Aave V3 Position (all chains)",
+    "params": [
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "market_id",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/lending/aavev3/position/{chain_id}/events",
+    "summary": "Get Position Events",
+    "params": [
+      {
+        "name": "chain_id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "market_id",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/lending/aavev3/position/{chain_id}/risk",
+    "summary": "Get Position Risk",
+    "params": [
+      {
+        "name": "chain_id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "market_id",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "target_health_factor",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/lending/aavev3/position/{chain_id}/snapshots",
+    "summary": "Get Position Historical Performance",
+    "params": [
+      {
+        "name": "chain_id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "market_id",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "max_snapshots",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/lending/aavev3/position/{chain_id}/yield",
+    "summary": "Get Position Yield",
+    "params": [
+      {
+        "name": "chain_id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "market_id",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "target_health_factor",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/lending/aavev3/summary",
+    "summary": "Get Aave V3 Summary",
+    "params": [
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "market_id",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/lending/kamino",
+    "summary": "Get Kamino Bundle",
+    "params": [
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v1/lending/kamino/batch",
+    "summary": "Batch Get Kamino Positions",
+    "params": [
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/lending/kamino/position",
+    "summary": "List Kamino Positions",
+    "params": [
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/lending/kamino/position/{obligation_address}/events",
+    "summary": "Get Obligation Events",
+    "params": [
+      {
+        "name": "obligation_address",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "market_address",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/lending/kamino/position/{obligation_address}/risk",
+    "summary": "Get Obligation Risk",
+    "params": [
+      {
+        "name": "obligation_address",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "market_address",
+        "in": "query",
+        "required": true
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/lending/kamino/position/{obligation_address}/snapshots",
+    "summary": "Get Obligation Historical Performance",
+    "params": [
+      {
+        "name": "obligation_address",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "market_address",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/lending/kamino/position/{obligation_address}/yield",
+    "summary": "Get Obligation Yield",
+    "params": [
+      {
+        "name": "obligation_address",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "market_address",
+        "in": "query",
+        "required": true
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/lending/kamino/summary",
+    "summary": "Get Kamino Summary",
+    "params": [
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/lending/morpho",
+    "summary": "List Morpho Positions",
+    "params": [
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "market_id",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "target_health_factor",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v1/lending/morpho/batch",
+    "summary": "Batch Get Morpho Positions",
+    "params": [
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/lending/morpho/position",
+    "summary": "Get Morpho Position (all chains)",
+    "params": [
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "market_id",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/lending/morpho/position/{chain_id}/events",
+    "summary": "Get Position Events",
+    "params": [
+      {
+        "name": "chain_id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "market_id",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/lending/morpho/position/{chain_id}/risk",
+    "summary": "Get Position Risk",
+    "params": [
+      {
+        "name": "chain_id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "market_id",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "target_health_factor",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/lending/morpho/position/{chain_id}/snapshots",
+    "summary": "Get Position Historical Performance",
+    "params": [
+      {
+        "name": "chain_id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "market_id",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "max_snapshots",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/lending/morpho/position/{chain_id}/yield",
+    "summary": "Get Position Yield",
+    "params": [
+      {
+        "name": "chain_id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "market_id",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "target_health_factor",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/lending/morpho/summary",
+    "summary": "Get Morpho Summary",
+    "params": [
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "market_id",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/portfolio/assets",
+    "summary": "Get Portfolio Assets",
+    "params": [
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/portfolio/balance",
+    "summary": "Get Portfolio Balance",
+    "params": [
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/aerodromev3",
+    "summary": "List Aerodrome V3 Positions",
+    "params": [
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "status",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "full",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v1/positions/aerodromev3/batch",
+    "summary": "Batch Get Aerodrome V3 Positions",
+    "params": [
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/aerodromev3/summary",
+    "summary": "Get Aerodrome V3 Summary",
+    "params": [
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/aerodromev3/{id}",
+    "summary": "Get Aerodrome V3 Position",
+    "params": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "manager_address",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/aerodromev3/{id}/events",
+    "summary": "Get Aerodrome V3 Position Events",
+    "params": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "manager_address",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/aerodromev3/{id}/full",
+    "summary": "Get Full Aerodrome V3 Position Detail",
+    "params": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "status",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "manager_address",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "granularity",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/aerodromev3/{id}/pnl",
+    "summary": "Get Aerodrome V3 Position PnL",
+    "params": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "status",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "manager_address",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/aerodromev3/{id}/snapshot",
+    "summary": "Get Aerodrome V3 Position Snapshot",
+    "params": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "manager_address",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/aerodromev3/{id}/snapshots",
+    "summary": "Get Aerodrome V3 Historical Performance",
+    "params": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "manager_address",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/aerodromev3/{id}/yield",
+    "summary": "Get Aerodrome V3 Position Yield",
+    "params": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "status",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "manager_address",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/orca",
+    "summary": "List Orca Positions",
+    "params": [
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "status",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "full",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v1/positions/orca/batch",
+    "summary": "Batch Get Orca Positions",
+    "params": [
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/orca/summary",
+    "summary": "Get Orca Summary",
+    "params": [
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/orca/{id}",
+    "summary": "Get Orca Position",
+    "params": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/uniswapv3",
+    "summary": "List Uniswap V3 Positions",
+    "params": [
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "status",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "full",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v1/positions/uniswapv3/batch",
+    "summary": "Batch Get Uniswap V3 Positions",
+    "params": [
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/uniswapv3/summary",
+    "summary": "Get Uniswap V3 Summary",
+    "params": [
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/uniswapv3/{id}",
+    "summary": "Get Uniswap V3 Position",
+    "params": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "manager_address",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/uniswapv3/{id}/events",
+    "summary": "Get Position Events",
+    "params": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "manager_address",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/uniswapv3/{id}/full",
+    "summary": "Get Full Position Detail",
+    "params": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "status",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "manager_address",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "granularity",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/uniswapv3/{id}/pnl",
+    "summary": "Get Position PnL",
+    "params": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "status",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "manager_address",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/uniswapv3/{id}/snapshot",
+    "summary": "Get Position Snapshot",
+    "params": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "manager_address",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/uniswapv3/{id}/snapshots",
+    "summary": "Get Position Historical Performance",
+    "params": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "manager_address",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/positions/uniswapv3/{id}/yield",
+    "summary": "Get Position Yield",
+    "params": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true
+      },
+      {
+        "name": "chain_id",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "status",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "manager_address",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/snapshots/dates",
+    "summary": "List Snapshot Dates",
+    "params": [
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/snapshots/wallet",
+    "summary": "Get Wallet Snapshot",
+    "params": [
+      {
+        "name": "wallet",
+        "in": "query",
+        "required": true
+      },
+      {
+        "name": "date",
+        "in": "query",
+        "required": true
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/usage/credits",
+    "summary": "Get Remaining Credits",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "path": "/v1/usage/logs",
+    "summary": "List API Request Logs",
+    "params": [
+      {
+        "name": "range",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "from",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "to",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "api_key_id",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "path",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "status_code",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "errors",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "page",
+        "in": "query",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "required": false
+      }
+    ]
+  }
+]
