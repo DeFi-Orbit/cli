@@ -3,10 +3,10 @@
 Command-line client for the [DeFi Orbit API](https://docs.defiorbit.xyz) — position-level DeFi data: LP and lending positions, P&L, fees, impermanent loss and liquidation risk across 10 chains.
 
 ```bash
-npx defiorbit credits
+npx @defiorbit/cli credits
 ```
 
-No install needed (`npx`), or install globally: `npm i -g defiorbit`. Requires Node 18+.
+No install needed (`npx @defiorbit/cli`), or install globally with `npm i -g @defiorbit/cli` and run `defiorbit`. Requires Node 18+.
 
 ## Auth
 
